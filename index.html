@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Charlene's Blog - Porto Trip</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Add Lightbox2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Add Animate.css for Scroll Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+
+    <!-- Sidebar with mandala background -->
+    <aside>
+        <h2>About Me</h2>
+        <p>Charlene, a mechatronics engineer with a passion for travel and technology.</p>
+        <nav>
+            <ul>
+                <li><a href="#quote">My Favorite Quote</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#blog">Blog Posts</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main content -->
+    <main>
+        <!-- Header section with parallax effect -->
+        <header class="parallax">
+            <h1>Porto Trip</h1>
+        </header>
+
+        <!-- Quote section with animation -->
+        <section id="quote" class="animate__animated animate__fadeIn">
+            <h2>"Sonríe que la vida voa"</h2>
+            <p><em>Smile, life is short 🌸</em></p>
+        </section>
+
+        <!-- Gallery section with descriptions and lightbox -->
+        <section id="gallery" class="animate__animated animate__fadeInUp">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div>
+                    <a href="images/beach-view.jpg" data-lightbox="gallery" data-title="A beautiful view of the beach in Porto">
+                        <img src="images/beach-view.jpg" alt="Beach View in Porto">
+                    </a>
+                    <p>A beautiful view of the beach in Porto.</p>
+                </div>
+                <div>
+                    <a href="images/boat-view.jpg" data-lightbox="gallery" data-title="Boat ride along the Douro River">
+                        <img src="images/boat-view.jpg" alt="Boat View in Porto">
+                    </a>
+                    <p>Boat ride along the Douro River.</p>
+                </div>
+                <div>
+                    <a href="images/car-sunset.jpg" data-lightbox="gallery" data-title="Sunset captured while driving">
+                        <img src="images/car-sunset.jpg" alt="Sunset in Porto">
+                    </a>
+                    <p>Sunset captured while driving.</p>
+                </div>
+                <div>
+                    <a href="images/cityscape-view.jpg" data-lightbox="gallery" data-title="Porto's beautiful cityscape by the river">
+                        <img src="images/cityscape-view.jpg" alt="Cityscape in Porto">
+                    </a>
+                    <p>Porto's beautiful cityscape by the river.</p>
+                </div>
+                <div>
+                    <a href="images/crystal-palace.jpg" data-lightbox="gallery" data-title="The Crystal Palace in Porto">
+                        <img src="images/crystal-palace.jpg" alt="Crystal Palace in Porto">
+                    </a>
+                    <p>The Crystal Palace in Porto.</p>
+                </div>
+                <div>
+                    <a href="images/ferry-wheel.jpg" data-lightbox="gallery" data-title="The iconic Ferris Wheel in Porto">
+                        <img src="images/ferry-wheel.jpg" alt="Ferris Wheel in Porto">
+                    </a>
+                    <p>The iconic Ferris Wheel in Porto.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Posts section with hyperlinks -->
+        <section id="blog" class="animate__animated animate__fadeIn">
+            <h2>Blog Posts</h2>
+            <article>
+                <h3>Exploring the Streets of Porto</h3>
+                <p>During my time in Porto, I explored many beautiful places:</p>
+                <ul>
+                    <li><a href="https://www.rivieratravel.co.uk/river-cruises/douro-river-cruises" target="_blank">Douro River Cruise</a></li>
+                    <li><a href="https://portoalities.com/en/the-best-beaches-in-porto-and-swimming-pools/" target="_blank">Seawater Sculpture Beach</a></li>
+                    <li><a href="https://porto.travel/palacio-de-cristal/" target="_blank">Crystal Palácio</a></li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Contact Form section -->
+        <section id="contact" class="animate__animated animate__fadeInUp">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/mgvwbppn" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <!-- Footer with copyright -->
+        <footer>
+            <p>© 2024 Charlene Terer - All rights reserved.</p>
+            <p>Last updated: September 15, 2024</p>
+        </footer>
+
+    </main>
+
+    <!-- Add Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+</body>
+</html>

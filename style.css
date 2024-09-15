@@ -1,0 +1,195 @@
+/* General body with mandala background */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    background: url('images/mandalas.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Sidebar styling */
+aside {
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+    font-size: 1.5em;
+}
+
+aside nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside nav ul li {
+    margin-bottom: 10px;
+}
+
+aside nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+aside nav ul li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Main content styling */
+main {
+    width: 75%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+}
+
+/* Header section with parallax effect */
+header.parallax {
+    background: url('images/beach-sunset.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Quote section with animation */
+#quote h2 {
+    font-size: 2.5em;
+    color: #007bff;
+    opacity: 0; /* Initially hidden */
+    animation: fadeInQuote 2s forwards; /* Fades in with animation */
+}
+
+@keyframes fadeInQuote {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start 20px down */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+    }
+}
+
+/* Gallery grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Blog Section */
+article h3 {
+    font-size: 2em;
+}
+
+article ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+article ul li {
+    margin-bottom: 10px;
+}
+
+article ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2em;
+}
+
+article ul li a:hover {
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+}
+
+/* General image styling */
+img {
+    max-width: 100%;
+    height: auto; /* Ensure all images maintain aspect ratio */
+}
+
+/* Lightbox */
+.gallery-grid a {
+    display: block;
+}
+
+/* Contact Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    font-size: 1em;
+}
+
+/* Scroll Animation */
+.animate__animated {
+    opacity: 0;
+}
+
+.animate__animated.animate__fadeIn {
+    animation: fadeInElement 1.5s forwards;
+}
+
+@keyframes fadeInElement {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
